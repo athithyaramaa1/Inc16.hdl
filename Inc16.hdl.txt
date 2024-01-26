@@ -1,0 +1,8 @@
+CHIP Inc16 {
+    IN in[16];
+    OUT out[16];
+
+    PARTS:
+    // Add16 is a 16-bit adder, where one input is the original number and the other is 1.
+    Add16(a=in, b[0]=true, out=out);
+}
